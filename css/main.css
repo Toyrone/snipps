@@ -1,0 +1,108 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.scroll-menu {
+  background-color: #333;
+  overflow: scroll;
+  white-space: nowrap;
+  scroll: no;
+}
+
+.scroll-menu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+.scroll-menu a:hover, scroll-menu a:focus {
+  background-color: #777;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*================ Toggle Switch =======================*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  -webkit-transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  -webkit-transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round::before {
+  border-radius: 50%;
+}
+
+
+ /*======================Search Filter==========================*/
+ #myInput {
+   background-image: url('');
+   background-position: 10px 12px;
+   background-repeat: no-repeat;
+   width: 100%;
+   font-size: 16px;
+   padding: 12px 20px 12px 40px;
+   margin-bottom: 12px;
+ }
+ #myUl {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+ #myUL li a {
+   border: 1px solid #ddd;
+   margin-top: -1px;
+   background-color: #f6f6f6;
+   padding: 12px;
+   text-decoration: none;
+   font-size: 18px;
+   color: black;
+   display: block;
+ }
+ #myUL li a.header {
+   background-color: #e2e2e2;
+   cursor: default;
+ }
+ #myUL li a:hover:not(.header) {
+   background: color: #eee;
+ }
